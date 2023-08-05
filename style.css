@@ -1,0 +1,163 @@
+html,
+body {
+    background: #100f0f;
+    font-family: Arial;
+}
+
+.wrapper {
+    width: 100%; /* «адаем ширину 100%, чтобы сделать ее резиновой */
+    text-align: center;
+}
+
+
+
+/*BUTTON*/
+.box {
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+
+button {
+    width: 9em;
+    height: 3em;
+    position: relative;
+    background-color: #100f0f;
+    border-radius: 30em;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #00a9ff;
+    font-family: Arial;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 4px 4px 10px #000000, -4px -4px 10px #1d1d1d;
+    transition: all 0.2s ease;
+}
+
+    button:hover {
+        background-color: #100f0f;
+        color: #ff6a00;
+        cursor: pointer;
+    }
+
+    button:active {
+        transform: scale(0.99);
+        background-color: #100f0f;
+        box-shadow: inset 4px 4px 10px #000000, inset -4px -4px 10px #1d1d1d;
+        cursor: pointer;
+    }
+
+
+
+/* SLIDER */
+#rangeValue {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    color: #00a9ff;
+    font-weight: 400;
+}
+
+.range {
+    width: 300px;
+    height: 13px;
+    z-index: 1;
+    -webkit-appearance: none;
+    background: #100f0f;
+    outline: none;
+    border-radius: 9px;
+    overflow: hidden;
+    box-shadow: inset 2px 2px 8px #000000, inset -3px -3px 9px #1d1d1d;
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #00a9ff;
+    cursor: pointer;
+    border: 9px solid #100f00;
+    box-shadow: -407px 0 0 400px #00a9ff, -3px -3px #00a9ff;
+    z-index: 3;
+    /*box-shadow: -407px 0 0 400px #00a9ff;*/
+    }
+
+
+/*SPINNER*/
+
+.spinner_box {
+    box-shadow: 4px 4px 10px #000000, -4px -4px 10px #1d1d1d;
+    border-radius: 100px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+.spinner {
+    -webkit-animation: rotate 2s linear infinite;
+    animation: rotate 2s linear infinite;
+    position: relative;
+    top: 10px;
+    z-index: 2;
+    width: 80px;
+    height: 80px;
+}
+
+    .spinner .path {
+        stroke: #ff6a00;
+        stroke-linecap: round;
+        -webkit-animation: dash 1.5s ease-in-out infinite;
+        animation: dash 1.5s ease-in-out infinite;
+    }
+
+@-webkit-keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes dash {
+    0% {
+        stroke-dasharray: 1, 150;
+        stroke-dashoffset: 0;
+    }
+
+    50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -35;
+    }
+
+    100% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -124;
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1, 150;
+        stroke-dashoffset: 0;
+    }
+
+    50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -35;
+    }
+
+    100% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -124;
+    }
+}
