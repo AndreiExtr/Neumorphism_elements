@@ -15,7 +15,6 @@ body {
 .box {
     display: flex;
     z-index: 1;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 150px;
