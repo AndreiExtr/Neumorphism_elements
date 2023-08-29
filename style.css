@@ -5,7 +5,7 @@ body {
 }
 
 .wrapper {
-    width: 100%; /* Задаем ширину 100%, чтобы сделать ее резиновой */
+    width: 100%; /* пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 100%, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ */
     text-align: center;
 }
 
@@ -22,11 +22,15 @@ body {
 }
 
 
-button {
+.but_text {
     width: 9em;
-    height: 3em;
-    position: relative;
-    background-color: #100f0f;
+    height: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin: 16px;
+    background-color: #333333;
     border-radius: 30em;
     font-size: 15px;
     text-transform: uppercase;
@@ -35,22 +39,23 @@ button {
     border: none;
     cursor: pointer;
     overflow: hidden;
-    box-shadow: 4px 4px 10px #000000, -4px -4px 10px #1d1d1d;
+    box-shadow: 4px 4px 10px #1b1b1b, -4px -4px 10px #424242;
     transition: all 0.2s ease;
 }
 
-    button:hover {
-        background-color: #100f0f;
+.but_text:hover {
+        background-color: #333333;
         color: #ff6a00;
         cursor: pointer;
     }
 
-    button:active {
+.but_text:active {
         transform: scale(0.99);
-        background-color: #100f0f;
-        box-shadow: inset 4px 4px 10px #000000, inset -4px -4px 10px #1d1d1d;
+        background-color: #333333;
+        box-shadow: inset 4px 4px 10px #1a1a1a, inset -4px -4px 10px #313131;
         cursor: pointer;
     }
+
 
 
 
