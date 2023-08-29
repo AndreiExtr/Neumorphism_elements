@@ -1,6 +1,6 @@
 html,
 body {
-    background: #100f0f;
+    background: #292929;
     font-family: Arial;
 }
 
@@ -29,7 +29,7 @@ body {
     padding-top: 16px;
     padding-bottom: 16px;
     margin: 16px;
-    background-color: #333333;
+    background-color: #292929;
     border-radius: 30em;
     font-size: 15px;
     text-transform: uppercase;
@@ -38,60 +38,23 @@ body {
     border: none;
     cursor: pointer;
     overflow: hidden;
-    box-shadow: 4px 4px 10px #1b1b1b, -4px -4px 10px #424242;
+    box-shadow: 4px 4px 10px rgb(54, 54, 54), -4px -4px 10px #181818;
     transition: all 0.2s ease;
 }
 
 .but_text:hover {
-        background-color: #333333;
+        background-color: #292929;
         color: #ff6a00;
         cursor: pointer;
     }
 
 .but_text:active {
         transform: scale(0.99);
-        background-color: #333333;
+        background-color: #292929;
         box-shadow: inset 4px 4px 10px #1a1a1a, inset -4px -4px 10px #313131;
         cursor: pointer;
     }
 
-
-
-
-/* SLIDER */
-#rangeValue {
-    position: relative;
-    display: block;
-    text-align: center;
-    font-size: 2em;
-    color: #00a9ff;
-    font-weight: 400;
-}
-
-.range {
-    width: 300px;
-    height: 13px;
-    z-index: 1;
-    -webkit-appearance: none;
-    background: #100f0f;
-    outline: none;
-    border-radius: 9px;
-    overflow: hidden;
-    box-shadow: inset 2px 2px 8px #000000, inset -3px -3px 9px #1d1d1d;
-}
-
-.range::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background: #00a9ff;
-    cursor: pointer;
-    border: 9px solid #100f00;
-    box-shadow: -407px 0 0 400px #00a9ff, -3px -3px #00a9ff;
-    z-index: 3;
-    /*box-shadow: -407px 0 0 400px #00a9ff;*/
-    }
 
 
 /*SPINNER*/
