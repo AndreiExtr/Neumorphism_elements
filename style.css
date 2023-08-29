@@ -30,7 +30,7 @@ body {
     padding-top: 16px;
     padding-bottom: 16px;
     margin: 16px;
-    background-color: #333333;
+    background-color: #100f0f;
     border-radius: 30em;
     font-size: 15px;
     text-transform: uppercase;
@@ -39,20 +39,20 @@ body {
     border: none;
     cursor: pointer;
     overflow: hidden;
-    box-shadow: 4px 4px 10px #1b1b1b, -4px -4px 10px #424242;
+    box-shadow: 4px 4px 10px #000000, -4px -4px 10px #181818;
     transition: all 0.2s ease;
 }
 
 .but_text:hover {
-        background-color: #333333;
+        background-color: #100f0f;
         color: #ff6a00;
         cursor: pointer;
     }
 
 .but_text:active {
         transform: scale(0.99);
-        background-color: #333333;
-        box-shadow: inset 4px 4px 10px #1a1a1a, inset -4px -4px 10px #313131;
+        background-color: #100f0f;
+        box-shadow: inset 4px 4px 10px #000000, inset -4px -4px 10px #181818;
         cursor: pointer;
     }
 
